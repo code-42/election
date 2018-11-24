@@ -12,7 +12,6 @@ contract Election {
     // Read/write Candidates
     mapping(uint => Candidate) public candidates;
 
-
     // Store Candidates Count
     uint public candidatesCount;
 
@@ -24,6 +23,7 @@ contract Election {
 
     // Constructor
     constructor () public {
-        candidate = "Candidate 1";
+        addCandidate("Candidate 1");
+        addCandidate("Candidate 2");
     }
 }
