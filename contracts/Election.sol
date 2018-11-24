@@ -13,6 +13,9 @@ contract Election {
     mapping(uint => Candidate) public candidates;
 
 
+    // Store Candidates Count
+    uint public candidatesCount;
+    
     // Constructor
     constructor () public {
         candidate = "Candidate 1";
