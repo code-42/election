@@ -1,8 +1,6 @@
 pragma solidity 0.4.24;
 
 contract Election {
-    // Read/write candidate
-    // string public candidate;
 
     // Model a Candidate
     struct Candidate {
@@ -10,6 +8,9 @@ contract Election {
         string name;
         uint voteCount;
     }
+
+    // Read/write Candidates
+    mapping(uint => Candidate) public candidates;
 
 
     // Constructor
